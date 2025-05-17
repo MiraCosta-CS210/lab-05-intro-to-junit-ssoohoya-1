@@ -25,6 +25,6 @@ public class TipCalculator {
     public double calculateTip(double bill, int percentage) {
         float decimalPercent = ((float) percentage / 100); // Turns our integer percentage into a decimal
         // With the true decimal calculated, the below calculates the tip and rounds to two decimal places
-        return (double) Math.round((decimalPercent * bill) * 100) / 100;
+        return (double) Math.round((decimalPercent * bill) * 100.0) / 100.0;
     }
 }
